@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:EntryAboveKeyboardApp"
+             x:Class="EntryAboveKeyboardApp.MainPage">
+    <Grid>
+        <Grid BackgroundColor="CornflowerBlue">
+            <Label VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" TextColor="White" Text="Your Chat Messages Here"/>
+        </Grid>
+        <Grid BackgroundColor="LightGray" ColumnSpacing="10" ColumnDefinitions="8*,2*" x:Name="SendUI" VerticalOptions="EndAndExpand">
+             <Entry VerticalOptions="EndAndExpand" x:Name="myEntry" Placeholder="Entry" Focused="Entry_Focused" Unfocused="Entry_Unfocused"/>
+
+            <Button HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Grid.Column="1" Text="Send" BackgroundColor="Black" TextColor="White"></Button>
+        </Grid>
+    </Grid>
+</ContentPage>
+
